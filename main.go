@@ -1,6 +1,6 @@
 package main
 
-import "github.com/gcpearse/noughts-and-crosses/game"
+import "github.com/gcpearse/go-noughts-and-crosses/game"
 
 func main() {
 	game.StartGame()
