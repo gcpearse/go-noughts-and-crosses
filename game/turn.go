@@ -3,7 +3,15 @@ package game
 import "fmt"
 
 func playTurn(player int, board *[3][3]string) {
-	fmt.Printf("Player %v's turn:\n", player)
+	var mark string
+
+	if player == 1 {
+		mark = "o"
+	} else if player == 2 {
+		mark = "x"
+	}
+
+	fmt.Printf("Player %v's turn. Mark a space with '%v'.\n", player, mark)
 
 	fmt.Println()
 
@@ -28,14 +36,6 @@ func playTurn(player int, board *[3][3]string) {
 		if board[x-1][y-1] == "." {
 			break
 		}
-	}
-
-	var mark string
-
-	if player == 1 {
-		mark = "o"
-	} else if player == 2 {
-		mark = "x"
 	}
 
 	board[x-1][y-1] = mark
