@@ -3,7 +3,7 @@ package game
 import "fmt"
 
 func createBoard() [3][3]string {
-	var board = [3][3]string{}
+	board := [3][3]string{}
 
 	for i, row := range board {
 		for j := range row {
