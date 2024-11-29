@@ -17,7 +17,6 @@ func playTurn(player int, board *[3][3]string) {
 		for x < 1 || x > 3 {
 			fmt.Print("Row: ")
 			fmt.Scan(&x)
-			fmt.Println()
 		}
 
 		for y < 1 || y > 3 {
