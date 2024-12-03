@@ -14,7 +14,7 @@ func StartGame() {
 			player = 1
 		}
 
-		playTurn(player, &board)
+		turn(player, &board)
 	}
 
 	if isGameOver(board) {

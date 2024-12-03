@@ -2,7 +2,7 @@ package game
 
 import "fmt"
 
-func playTurn(player int, board *[3][3]string) {
+func turn(player int, board *[3][3]string) {
 	var mark string
 
 	if player == 1 {
