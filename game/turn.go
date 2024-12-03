@@ -30,11 +30,15 @@ func playTurn(player int, board *[3][3]string) {
 		for y < 1 || y > 3 {
 			fmt.Print("Column: ")
 			fmt.Scan(&y)
-			fmt.Println()
 		}
 
 		if board[x-1][y-1] == "." {
+			fmt.Println()
 			break
+		} else {
+			fmt.Println()
+			fmt.Println("Mark an empty space.")
+			fmt.Println()
 		}
 	}
 
