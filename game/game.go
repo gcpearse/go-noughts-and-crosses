@@ -18,10 +18,10 @@ func StartGame() {
 	}
 
 	if isGameOver(board) {
+		displayBoard(board)
+
 		displayGameOverMessage(player, board)
 
 		fmt.Println()
-
-		displayBoard(board)
 	}
 }
