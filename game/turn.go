@@ -5,9 +5,10 @@ import "fmt"
 func turn(player int, board *[3][3]string) {
 	var mark string
 
-	if player == 1 {
+	switch player {
+	case 1:
 		mark = "o"
-	} else if player == 2 {
+	case 2:
 		mark = "x"
 	}
 

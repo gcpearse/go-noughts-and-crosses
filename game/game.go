@@ -8,9 +8,10 @@ func StartGame() {
 	player := 2
 
 	for !isGameOver(board) {
-		if player == 1 {
+		switch player {
+		case 1:
 			player = 2
-		} else if player == 2 {
+		case 2:
 			player = 1
 		}
 
